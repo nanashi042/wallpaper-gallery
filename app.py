@@ -9,5 +9,10 @@ def index():
     
     return render_template('index.html')
 
+
+@app.route('/img')
+def img():
+    return render_template('slider.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
